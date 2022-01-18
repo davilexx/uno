@@ -1,0 +1,39 @@
+// vars
+
+// font
+$font-helvetica: 'Helvetica Now Display', sans-serif;
+
+// colors
+$color-white: #fff;
+
+// body
+.page {
+  margin: 0;
+  padding: 0;
+}
+
+// header
+.header {
+
+  &__video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -9;
+  }
+
+  &__title {
+    font-family: $font-helvetica;
+    font-weight: 800;
+    color: $color-white;
+    font-size: 100px;
+    margin: 0 0 0 6rem;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+}
