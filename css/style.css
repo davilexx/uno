@@ -1,10 +1,48 @@
 .page {
   margin: 0;
   padding: 0;
+  background-color: #000;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0 3rem 0;
+}
+
+.container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
 }
 
 .header__video {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -18,9 +56,276 @@
   color: #fff;
   font-size: 100px;
   margin: 0 0 0 6rem;
+  line-height: 0;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.covers__title-wrapper {
+  width: 20%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.covers__title {
+  font-family: "Helvetica Now Display", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: #fff;
+  line-height: 0;
+}
+
+.covers__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 80%;
+}
+
+.covers__work {
+  width: 33%;
+  margin: 0 0.1rem 0 0.1rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.covers__work:hover {
+  opacity: .6;
+}
+
+.covers__img {
+  width: 100%;
+}
+
+.posters__title-wrapper {
+  width: 20%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.posters__title {
+  font-family: "Helvetica Now Display", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: #fff;
+  line-height: 0;
+}
+
+.posters__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 80%;
+}
+
+.posters__work {
+  width: 33%;
+  margin: 0 0.1rem 0 0.1rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.posters__work:hover {
+  opacity: .6;
+}
+
+.posters__img {
+  width: 100%;
+}
+
+.merch__title-wrapper {
+  width: 20%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.merch__title {
+  font-family: "Helvetica Now Display", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: #fff;
+  line-height: 0;
+}
+
+.merch__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 80%;
+}
+
+.merch__work {
+  width: 33%;
+  margin: 0 0.1rem 0 0.1rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.merch__work:hover {
+  opacity: .6;
+}
+
+.merch__img {
+  width: 100%;
+}
+
+.logos__title-wrapper {
+  width: 20%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.logos__title {
+  font-family: "Helvetica Now Display", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  color: #fff;
+  line-height: 0;
+}
+
+.logos__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 80%;
+}
+
+.logos__work {
+  width: 33%;
+  margin: 0 0.1rem 0 0.1rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.logos__work:hover {
+  opacity: .6;
+}
+
+.logos__img {
+  width: 100%;
+}
+
+.footer {
+  background: url("../assets/img/about.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.footer__text {
+  font-family: "Helvetica Now Display", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #000;
+}
+
+.footer__text span {
+  display: inline-block;
+}
+
+.text__name {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.text__info {
+  margin-bottom: 2rem;
+}
+
+.links__title {
+  font-family: "Helvetica Now Display", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000;
+  margin: 2rem 0 0.5rem 0;
+}
+
+.links__list {
+  list-style: none;
+  padding: 0;
+  font-family: "Helvetica Now Display", sans-serif;
+}
+
+.links__link {
+  text-decoration: none;
+  font-size: 30px;
+  color: #696868;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.links__link:hover {
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */
