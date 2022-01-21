@@ -5,3 +5,13 @@ const pathToImage = `../assets/img/covers/${imageName}`;
 const covers = [];
 
 // console.log(pathToImage);
+
+// const len = 2000000; //How long you want to wait.
+// let pics = [];
+// for(let i = 0; i < len; i++){
+//   a = new Image();
+//   a.onload = function(){
+//     pics.push(this);
+//   }
+//   a.src = '../assets/img/covers/' + i + '.jpg';
+// }

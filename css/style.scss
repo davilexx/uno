@@ -84,6 +84,7 @@ section {
   height: auto;
   @include flex-center-all();
   padding: 3rem 0 3rem 0;
+  background-color: $color-black;
 }
 
 // container
@@ -102,7 +103,7 @@ section {
   height: 100vh;
 
   &__video {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -125,8 +126,54 @@ section {
 
 }
 
-.covers {
+/* .covers {
   @include sections();
+} */
+
+.covers {
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8449754901960784) 35%, rgba(0,0,0,0.7553396358543417) 53%, rgba(0,0,0,0.6348914565826331) 64%, rgba(0,0,0,0.46122198879551823) 82%, rgba(0, 0, 0, 0.164) 94%, rgba(0,0,0,0) 100%);
+
+  &__title-wrapper {
+    width: 20%;
+    position: sticky;
+    top: 0;
+  }
+
+  &__title {
+    font-family: $font-helvetica;
+    font-weight: 500;
+    font-size: 50px;
+    color: $color-white;
+    line-height: 0;
+  }
+
+  &__row {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1rem;
+  }
+
+  &__work {
+    cursor: pointer;
+    transition: $transition-basic;
+
+    &:first-child {
+      grid-column: 1 / 3;
+      grid-row:  1 / 3;
+    }
+
+    &:hover {
+      opacity: .6;
+    }
+
+  }
+
+  &__img {
+    width: 100%;
+  }
+
 }
 
 .posters {
