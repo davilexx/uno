@@ -1,177 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>uno</title>
+  <!-- open graph -->
+  <meta property="og:title" content="uno">
+  <meta property="og:url" content="https://uno.graphics">
+  <meta property="og:image" content="https://imgur.com/Kl7sitn">
+  <!-- favicon -->
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="assets/fonts/helvetica.css">
+  <!-- styles -->
+  <link rel="stylesheet" href="css/fonts/inter.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page">
-  <header class="page__header header">
-    <video autoplay muted loop id="header__video" class="header__video">
+  <!-- loader -->
+  <div class="page__loader-wrapper">
+    <span class="page__loader">
+      <span class="page__loader-inner"></span>
+    </span>
+  </div>
+
+  <!-- menu -->
+  <div class="page__burger burger">
+    <span></span>
+  </div>
+
+  <div class="page__menu-wrapper">
+    <nav class="page__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#covers" class="menu__link">covers</a>
+        </li>
+        <li class="menu__item">
+          <a href="#logos" class="menu__link">logos</a>
+        </li>
+        <li class="menu__item">
+          <a href="#posters" class="menu__link">posters</a>
+        </li>
+        <li class="menu__item">
+          <a href="#merch" class="menu__link">merch</a>
+        </li>
+        <li class="menu__item">
+          <a href="#about" class="menu__link">about</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="header" id="header">
+    <video autoplay muted loop playsinline id="header__video" class="header__video">
       <source src="assets/video/uno-header-video.mp4" type="video/mp4">
     </video>
-    <h1 class="header__title">uno</h1>
+    <img src="assets/svg/logo.svg" alt="logo" class="header__title">
+    <a href="#covers" class="header__go-down">
+      <i class="fa fa-solid fa-chevron-down"></i>
+    </a>
   </header>
 
-  <section class="covers">
+  <section class="covers" id="covers">
     <div class="covers__container container">
       <div class="covers__title-wrapper">
         <h2 class="covers__title">covers</h2>
       </div>
-      <div class="covers__row row row__covers">
-        <div class="covers__work">
-          <img src="assets/img/covers/2021 c61 crt185 1080x1080.jpg" alt="" class="covers__img">
+      <div class="covers__all">
+        <div class="covers__row row row__covers covers__first">
+          <div class="covers__link">
+            <div class="covers__work">
+              <img src="assets/images/covers/cover-66.jpg" alt="" class="covers__img">
+            </div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work">
+              <img src="assets/images/covers/cover-65.jpg" alt="" class="covers__img">
+            </div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work">
+              <img src="assets/images/covers/cover-64.jpg" alt="" class="covers__img">
+            </div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-63.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-62.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-61.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-60.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-59.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-58.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-57.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-56.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-55.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-54.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-53.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-51.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-49.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-47.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-45.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-44.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-43.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-42.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-41.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-40.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-39.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-38.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-37.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-36.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-35.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-34.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-33.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-32.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-31.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-30.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-29.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-28.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-27.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-26.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-25.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-24.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-23.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-22.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-21.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-20.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-19.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-18.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-17.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-16.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-15.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-14.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-13.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-12.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-11.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-10.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-9.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-8.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-7.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-6.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-5.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-4.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-3.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-2.jpg" alt="" class="covers__img"></div>
+          </div>
+          <div class="covers__link">
+            <div class="covers__work"><img src="assets/images/covers/cover-1.jpg" alt="" class="covers__img"></div>
+          </div>
+
         </div>
-        <div class="covers__work">
-          <img src="assets/img/covers/2021 c59 ncs.jpg" alt="" class="covers__img">
+        <!-- <div class="covers__category-wrapper">
+          <h3 class="covers__category">'.$rows[$i].'</h3>
+          <h6 class="covers__category-year">'.$rows_y[$i].'</h6>
         </div>
-        <div class="covers__work">
-          <img src="assets/img/covers/2021 c56 pprfnk037 1080x1080.jpg" alt="" class="covers__img">
+        <div class="covers__row row row__covers row__covers_cat">
+          <a href="pages/cover.php?index='.$row['index'].'" class="covers__link covers__link_categories">
+            <div class="covers__work" id="c-'.$row['index'].'">
+              <img src="assets/images/covers/'.$row['image'].'" alt="" class="covers__img">
+            </div>
+          </a>
         </div>
-        <div class="covers__work">
-          <img src="assets/img/covers/2021 c55 madsea008 1080x1080.jpg" alt="" class="covers__img">
-        </div>
-        <div class="covers__work">
-          <img src="assets/img/covers/2021 c54 crit173 1080x1080.jpg" alt="" class="covers__img">
-        </div>
-        <div class="covers__work">
-          <img src="assets/img/covers/2021 c53 pilot066 1080x1080.jpg" alt="" class="covers__img">
-        </div>
-        <div class="covers__work">
-          <img src="assets/img/covers/2021 c52 dividid018 1080x1080.jpg" alt="" class="covers__img">
-        </div>
-        <div class="covers__work">
-          <img src="assets/img/covers/2021 c51 crit171 1080x1080.jpg" alt="" class="covers__img">
-        </div>
-        <div class="covers__work">
-          <img src="assets/img/covers/2021 c50 disbbsv002 1080x1080.jpg" alt="" class="covers__img">
-        </div>
+
+        <div class="covers__row row row__covers covers__second">
+
+          <a href="pages/cover.php?index='.$second_half_c[$i].'" class="covers__link">
+            <div class="covers__work" id="c-'.$second_half_c[$i].'">
+              <img src="assets/images/covers/'.$row['image'].'" alt="" class="covers__img">
+            </div>
+          </a>
+
+        </div> -->
+
       </div>
     </div>
   </section>
 
-  <section class="posters">
-    <div class="posters__container container">
-      <div class="posters__title-wrapper">
-        <h2 class="posters__title">posters</h2>
-      </div>
-      <div class="posters__row row row__posters">
-        <div class="posters__work">
-          <img src="assets/img/posters/uno01-02-00-01.jpg" alt="" class="posters__img">
-        </div>
-        <div class="posters__work">
-          <img src="assets/img/posters/uno01-02-digitz-01.jpg" alt="" class="posters__img">
-        </div>
-        <div class="posters__work">
-          <img src="assets/img/posters/uno01-02-digitz-02.jpg" alt="" class="posters__img">
-        </div>
-        <div class="posters__work">
-          <img src="assets/img/posters/uno01-02-div-01.jpg" alt="" class="posters__img">
-        </div>
-        <div class="posters__work">
-          <img src="assets/img/posters/uno01-02-div-02.jpg" alt="" class="posters__img">
-        </div>
-        <div class="posters__work">
-          <img src="assets/img/posters/uno01-02-gethigh-01a.jpg" alt="" class="posters__img">
-        </div>
-        <div class="posters__work">
-          <img src="assets/img/posters/uno01-02-gethigh-01b.jpg" alt="" class="posters__img">
-        </div>
-        <div class="posters__work">
-          <img src="assets/img/posters/uno01-02-gethigh-02.jpg" alt="" class="posters__img">
-        </div>
-        <div class="posters__work">
-          <img src="assets/img/posters/uno01-02-gethigh-03.jpg" alt="" class="posters__img">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="merch">
-    <div class="merch__container container">
-      <div class="merch__title-wrapper">
-        <h2 class="merch__title">merch</h2>
-      </div>
-      <div class="merch__row row row__merch">
-        <div class="merch__work">
-          <img src="assets/img/merch/uno01-05-01a.jpg" alt="" class="merch__img">
-        </div>
-        <div class="merch__work">
-          <img src="assets/img/merch/uno01-05-01b.jpg" alt="" class="merch__img">
-        </div>
-        <div class="merch__work">
-          <img src="assets/img/merch/uno01-05-01c.jpg" alt="" class="merch__img">
-        </div>
-        <div class="merch__work">
-          <img src="assets/img/merch/uno01-05-02.jpg" alt="" class="merch__img">
-        </div>
-        <div class="merch__work">
-          <img src="assets/img/merch/uno01-05-03.jpg" alt="" class="merch__img">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="logos">
+  <section class="logos" id="logos">
     <div class="logos__container container">
       <div class="logos__title-wrapper">
         <h2 class="logos__title">logos</h2>
       </div>
-      <div class="logos__row row row__logos">
-        <div class="logos__work">
-          <img src="assets/img/logos/uno01-03-01a.jpg" alt="" class="logos__img">
-        </div>
-        <div class="logos__work">
-          <img src="assets/img/logos/uno01-03-02a.jpg" alt="" class="logos__img">
-        </div>
-        <div class="logos__work">
-          <img src="assets/img/logos/uno01-03-03a.jpg" alt="" class="logos__img">
-        </div>
-        <div class="logos__work">
-          <img src="assets/img/logos/uno01-03-04a.jpg" alt="" class="logos__img">
-        </div>
-        <div class="logos__work">
-          <img src="assets/img/logos/uno01-03-05a.jpg" alt="" class="logos__img">
-        </div>
-        <div class="logos__work">
-          <img src="assets/img/logos/uno01-03-06a.jpg" alt="" class="logos__img">
-        </div>
-        <div class="logos__work">
-          <img src="assets/img/logos/uno01-03-07a.jpg" alt="" class="logos__img">
-        </div>
-        <div class="logos__work">
-          <img src="assets/img/logos/uno01-03-08a.jpg" alt="" class="logos__img">
-        </div>
-        <div class="logos__work">
-          <img src="assets/img/logos/uno01-03-09a.jpg" alt="" class="logos__img">
+      <div class="logos__all">
+        <div class="logos__row row row__logos">
+          <div class="logos__link logos__link_work">
+            <div class="logos__work logos__work_item">
+              <img src="assets/images/logos/color/logo-b-1.jpg" alt="" class="logos__img logos__img_color">
+              <img src="assets/images/logos/grayscale/logo-a-1.jpg" alt="" class="logos__img logos__img_grayscale">
+            </div>
+          </div>
+          <div class="logos__link logos__link_work">
+            <div class="logos__work logos__work_item">
+              <img src="assets/images/logos/color/logo-b-2.jpg" alt="" class="logos__img logos__img_color">
+              <img src="assets/images/logos/grayscale/logo-a-2.jpg" alt="" class="logos__img logos__img_grayscale">
+            </div>
+          </div>
+          <div class="logos__link logos__link_work">
+            <div class="logos__work logos__work_item">
+              <img src="assets/images/logos/color/logo-b-3.jpg" alt="" class="logos__img logos__img_color">
+              <img src="assets/images/logos/grayscale/logo-a-3.jpg" alt="" class="logos__img logos__img_grayscale">
+            </div>
+          </div>
+          <div class="logos__link logos__link_work">
+            <div class="logos__work logos__work_item">
+              <img src="assets/images/logos/color/logo-b-4.jpg" alt="" class="logos__img logos__img_color">
+              <img src="assets/images/logos/grayscale/logo-a-4.jpg" alt="" class="logos__img logos__img_grayscale">
+            </div>
+          </div>
+          <div class="logos__link logos__link_work">
+            <div class="logos__work logos__work_item">
+              <img src="assets/images/logos/color/logo-b-5.jpg" alt="" class="logos__img logos__img_color">
+              <img src="assets/images/logos/grayscale/logo-a-5.jpg" alt="" class="logos__img logos__img_grayscale">
+            </div>
+          </div>
+          <div class="logos__link logos__link_work">
+            <div class="logos__work logos__work_item">
+              <img src="assets/images/logos/color/logo-b-6.jpg" alt="" class="logos__img logos__img_color">
+              <img src="assets/images/logos/grayscale/logo-a-6.jpg" alt="" class="logos__img logos__img_grayscale">
+            </div>
+          </div>
+          <div class="logos__link logos__link_work">
+            <div class="logos__work logos__work_item">
+              <img src="assets/images/logos/color/logo-b-7.jpg" alt="" class="logos__img logos__img_color">
+              <img src="assets/images/logos/grayscale/logo-a-7.jpg" alt="" class="logos__img logos__img_grayscale">
+            </div>
+          </div>
+          <div class="logos__link logos__link_work">
+            <div class="logos__work logos__work_item">
+              <img src="assets/images/logos/color/logo-b-8.jpg" alt="" class="logos__img logos__img_color">
+              <img src="assets/images/logos/grayscale/logo-a-8.jpg" alt="" class="logos__img logos__img_grayscale">
+            </div>
+          </div>
+          <div class="logos__link logos__link_work">
+            <div class="logos__work logos__work_item">
+              <img src="assets/images/logos/color/logo-b-9.jpg" alt="" class="logos__img logos__img_color">
+              <img src="assets/images/logos/grayscale/logo-a-9.jpg" alt="" class="logos__img logos__img_grayscale">
+            </div>
+          </div>
+          <div class="logos__link logos__link_work">
+            <div class="logos__work logos__work_item">
+              <img src="assets/images/logos/color/logo-b-10.jpg" alt="" class="logos__img logos__img_color">
+              <img src="assets/images/logos/grayscale/logo-a-10.jpg" alt="" class="logos__img logos__img_grayscale">
+            </div>
+          </div>
+          <div class="logos__link logos__link_work">
+            <div class="logos__work logos__work_item">
+              <img src="assets/images/logos/color/logo-b-11.jpg" alt="" class="logos__img logos__img_color">
+              <img src="assets/images/logos/grayscale/logo-a-11.jpg" alt="" class="logos__img logos__img_grayscale">
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="footer">
-    <div class="footer__container container">
-      <div class="footer__row row">
-        <h3 class="footer__text text">
+  <section class="posters" id="posters">
+    <div class="posters__container container">
+      <div class="posters__title-wrapper">
+        <h2 class="posters__title">posters</h2>
+      </div>
+      <div class="posters__all">
+        <div class="posters__row row row__posters posters__first">
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-1.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-2.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-3.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-6.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-7.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-8.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-9.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-10.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-11.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-12.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-13.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-14.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-15.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-16.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-17.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-18.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-19.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-20.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+          <div class="posters__link">
+            <div class="posters__work">
+              <img src="assets/images/posters/poster-21.jpg" alt="" class="posters__img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="merch" id="merch">
+    <div class="merch__container container">
+      <div class="merch__title-wrapper">
+        <h2 class="merch__title">merch</h2>
+      </div>
+      <div class="merch__all">
+        <div class="merch__row row row__merch">
+          <div class="merch__link">
+            <div class="merch__work">
+              <img src="assets/images/merch/merch-6.png" alt="" class="merch__img">
+            </div>
+          </div>
+          <div class="merch__link">
+            <div class="merch__work">
+              <img src="assets/images/merch/merch-5.png" alt="" class="merch__img">
+            </div>
+          </div>
+          <div class="merch__link">
+            <div class="merch__work">
+              <img src="assets/images/merch/merch-4.png" alt="" class="merch__img">
+            </div>
+          </div>
+          <div class="merch__link">
+            <div class="merch__work">
+              <img src="assets/images/merch/merch-3.png" alt="" class="merch__img">
+            </div>
+          </div>
+          <div class="merch__link">
+            <div class="merch__work">
+              <img src="assets/images/merch/merch-2.png" alt="" class="merch__img">
+            </div>
+          </div>
+          <div class="merch__link">
+            <div class="merch__work">
+              <img src="assets/images/merch/merch-1.png" alt="" class="merch__img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about__container container">
+      <div class="about__row row">
+        <h3 class="about__text text">
+
           <span class="text__name">Rostislav Borisov</span>
           <br>
-          <span class="text__info">25 y. o. visual artist from Moscow, Russia</span>
+          <span class="text__info">26 y. o. visual artist<br>from Moscow, Russia</span>
           <br>
-          <span>I make graphics</span>
-          <br>
-          <span>worked with Noisia, dBridge, Imanu, etc.</span>
-          <br>
-          <span>open for collaborations</span>
+          <div class="text__desc">
+            <span class="text__desc">I make graphics</span>
+            <br>
+            <span class="text__desc">worked with Noisia, dBridge, Imanu, etc.</span>
+            <br>
+            <span class="text__desc">open for collaborations</span>
+          </div>
         </h3>
-        <div class="footer__links links">
+        <div class="about__links links">
+
           <h3 class="links__title">contact</h3>
           <ul class="links__list">
             <li class="links__item">
-              <a href="mailto:uno@uno.graphics" target="_blank" class="links__link">mail</a>
+              <a href="mailto:uno@uno.graphics" target="_blank" class="links__link">uno@uno.graphics</a>
             </li>
             <li class="links__item">
               <a href="https://instagram.com/uno.graphics" target="_blank" class="links__link">instagram</a>
@@ -192,8 +559,13 @@
         </div>
       </div>
     </div>
+    <a href="#header" class="about__go-top" id="about">
+      <i class="fa fa-solid fa-chevron-up" aria-hidden="true"></i>
+    </a>
   </section>
 
-  <script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/eec6aaf986.js" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
 </body>
+
 </html>

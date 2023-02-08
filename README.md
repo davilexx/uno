@@ -1,2 +1,0 @@
-# uno
-website for uno
